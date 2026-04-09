@@ -218,9 +218,9 @@ class FeedbackPreprocessor:
         embedding = self.vectorize(normalized) if is_meaningful else []
 
         return {
+            "original_text": text,
             "cleaned_text": cleaned,
             "tokens": tokens,
             "embedding": embedding,
             "is_meaningful": is_meaningful,
-            "length": len(tokens),
         }
