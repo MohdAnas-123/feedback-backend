@@ -439,4 +439,8 @@ async def shutdown_event():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    # Use PORT from environment (Hugging Face Spaces defaults to 7860)
+    port = int(os.getenv("PORT", 7860))
+    # Explicitly use only 1 worker to avoid duplicating model memory in RAM
+    uvicorn.run("main:app", host="0.0.0.0", port=port, workers=1)
+

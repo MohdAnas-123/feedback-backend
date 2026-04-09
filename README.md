@@ -1,4 +1,15 @@
+---
+title: CritiqueConnect
+emoji: 📝
+colorFrom: indigo
+colorTo: blue
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # CritiqueConnect Backend
+
 
 This is the backend implementation of CritiqueConnect, a platform for enhancing creative feedback using AI models.
 
