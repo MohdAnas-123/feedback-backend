@@ -7,7 +7,6 @@ __pycache__/
 .gitignore
 critiqueconnect.db
 *.log
-*.txt
 *.md
 Dockerfile
 .dockerignore
